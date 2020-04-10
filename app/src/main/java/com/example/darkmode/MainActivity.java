@@ -10,11 +10,11 @@ import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
     private Switch aSwitch;
-    SharedPref sharedPref;
+    SharedPrefK sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        sharedPref = new SharedPref(this);
+        sharedPref = new SharedPrefK(this);
         if(sharedPref.loadNightModeState()){
             setTheme(R.style.darktheme);
         }else
